@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Sistema que faz o gerenciamento de frotas de trens ",
+  "homepage": "https://github.com/sandro20231/GestaoFrotaTrens#readme",
+  "bugs": {
+    "url": "https://github.com/sandro20231/GestaoFrotaTrens/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandro20231/GestaoFrotaTrens.git"
+  },
+  "license": "ISC",
+  "author": "Sandro da Paixão Coelho",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
