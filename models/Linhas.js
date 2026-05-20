@@ -6,7 +6,8 @@ const Linhas = mongoose.model('Linhas', new Schema({
     nome: { type: String, required: true },
     cor: { type: String, required: true },
     habilitada: { type: Boolean, required: true },
-    emObras: { type: Boolean, required: true }
+    emObras: { type: Boolean, required: true },
+    usuario: Object
 }, { timestamps: true }));
 
 module.exports = Linhas;
