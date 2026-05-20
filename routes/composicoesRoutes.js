@@ -10,6 +10,11 @@ const router = express.Router();
 // filtrar por status de manutencao
 // filtrar por status de operacao
 
+// mandar composicao para manutencao
+// retirar composicao da manutencao
+// colocar em operacao composicao
+// retirar de operacao composicao
+
 
 
 module.exports = router;
