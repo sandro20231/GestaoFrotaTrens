@@ -9,7 +9,7 @@ const authorization = (req, res, next) => {
     }
 
     const token = getToken(req);
-    console.log(token)
+   
     if (!token) {
         res.status(404).json({ message: "Acesso negado" });
         return;

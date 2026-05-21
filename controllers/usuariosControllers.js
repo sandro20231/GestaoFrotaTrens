@@ -195,6 +195,13 @@ module.exports = class usuariosControllers {
             return;
         }
 
+        const userExists = await Usuarios.find({ email: email });
+
+        if (usuarios.email !== email && userExists) {
+            res.status(422).json({ message: "Não é possível finalizar a alteração de usuário" });
+            return;
+        }
+
         if (senha !== confirmacaoSenha) {
             res.status(422).json({ message: "senha e confirmacao de senha diferentes, digite de novo por favor" });
             return;

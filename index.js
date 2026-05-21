@@ -12,6 +12,7 @@ app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
 
 // rotas
 app.use('/', require('./routes/usuariosRoutes'));
+app.use('/linhas', require('./routes/linhasRoutes'));
 // escuta de porta
 app.listen(porta, () => {
     console.log(`O express está escutando a porta ${porta}`);
