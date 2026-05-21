@@ -7,6 +7,6 @@ const Composicoes = mongoose.model('Composicoes', new Schema({
     operacao: { type: Boolean, required: true },
     usuario: Object,
     serieTrens: Object
-}, { timestamps }));
+}, { timestamps:true }));
 
 module.exports = Composicoes;
