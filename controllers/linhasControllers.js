@@ -253,7 +253,7 @@ module.exports = class linhasControllers {
             res.status(422).json({ message: "linha não existe" });
             return;
         }
-        // criando prototipo de habilitacao
+        // criando prototipo 
         const prototipo = {
             habilitada: false
         }
@@ -282,11 +282,11 @@ module.exports = class linhasControllers {
             res.status(422).json({ message: "linha não existe" });
             return;
         }
-        // cirando prototipo de habilitacao
+        // criando prototipo 
         const prototipo = {
             emObras: true
         }
-        // tentando haiblitar
+        // tentando reformar
         try {
             await Linhas.updateOne({ _id: id }, prototipo);
 
@@ -308,7 +308,7 @@ module.exports = class linhasControllers {
             res.status(422).json({ message: "linha não existe" });
             return;
         }
-        // cirando prototipo 
+        // criando prototipo 
         const prototipo = {
             emObras: false
         }
