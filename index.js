@@ -15,6 +15,8 @@ app.use('/', require('./routes/usuariosRoutes'));
 app.use('/linhas', require('./routes/linhasRoutes'));
 app.use('/series', require('./routes/serieTrensRoutes'));
 app.use('/composicoes', require('./routes/composicoesRoutes'));
+app.use('/operacoes', require('./routes/operacoesRoutes'));
+
 // escuta de porta
 app.listen(porta, () => {
     console.log(`O express está escutando a porta ${porta}`);

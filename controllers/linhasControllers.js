@@ -261,7 +261,7 @@ module.exports = class linhasControllers {
         try {
             await Linhas.updateOne({ _id: id }, prototipo);
 
-            res.status(200).json({ message: "linha habilitada com sucesso" });
+            res.status(200).json({ message: "linha desabilitada com sucesso" });
 
         } catch (err) {
             res.status(500).json({ message: err.message });

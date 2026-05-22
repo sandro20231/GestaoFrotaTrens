@@ -34,7 +34,8 @@ module.exports = class composicoesControllers {
             manutencao,
             operacao,
             serieTrens: {
-                id: serie._id
+                id: serie._id,
+                linhaOperacao:serie.linhaOperacao._id
             },
             usuario: {
                 id: usuario.id,

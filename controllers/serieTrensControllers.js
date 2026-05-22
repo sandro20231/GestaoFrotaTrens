@@ -4,6 +4,7 @@ const getUserByToken = require('../helpers/getUserByToken');
 
 const Linhas = require('../models/Linhas');
 
+
 module.exports = class serieTrensControllers {
     // cadastrar series
     static async cadastrarSeries(req, res) {
@@ -32,12 +33,12 @@ module.exports = class serieTrensControllers {
 
         // criando portotipo
 
-        const linhaUtilizacao = await Linhas.find({ numero: linha });
+        const linhaUtilizacao = await Linhas.findOne({ numero: linha });
 
         // checando se a linha de utilizacao existe
 
         if (!linhaUtilizacao) {
-            res.status(200).json({ message: "A linha digitada nãoe xiste" });
+            res.status(422).json({ message: "A linha digitada nãoe xiste" });
             return;
         }
 
@@ -54,7 +55,7 @@ module.exports = class serieTrensControllers {
             }
 
         })
-        console.log(prototipo);
+
         // tentando salvar nova serie
 
         try {
